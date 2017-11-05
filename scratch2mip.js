@@ -28,9 +28,9 @@
             console.log('move backward ' + steps + ' steps');
         });
     }
-    ext.ledchange = function(steps) {
-        $.get('http://localhost:8080/ledchange?rgb=' + steps, null, function() {
-            console.log('move backward ' + rgb );
+    ext.ledchange = function(rgb) {
+        $.get('http://localhost:8080/ledchange?rgb=' + rgb, null, function() {
+            console.log('change rgb colour ' + rgb );
         });
     }
 
