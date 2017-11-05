@@ -108,3 +108,12 @@ dispatcher.onGet('/left', function(req, res) {
     console.log('Drive to Left ' + degrees + ' degrees');
   });
 });
+dispatcher.onGet('/ledchange', function(req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('ledchange');
+  var rgb = parseInt(getQueryObj(req).rgb, 10);
+
+  selectedRobot.setMipChestLedWithColor(rgb, 0, 0, 0, function(err) {
+    console.log('change rgb colour ' + rgb);
+  });
+});
