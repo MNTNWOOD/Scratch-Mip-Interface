@@ -28,20 +28,21 @@
             console.log('move backward ' + steps + ' steps');
         });
     }
+    ext.ledchange = function(steps) {
+        $.get('http://localhost:8080/ledchange?rgb=' + steps, null, function() {
+            console.log('move backward ' + rgb );
+        });
+    }
 
-    var lang = ((navigator.language || navigator.userLanguage) == 'ja') ? 'ja' : 'en';
+
+    var lang = 'en';
     var locale = {
-        ja: {
-            turn_right: '右に %n 度回す',
-            turn_left: '左に %n 度回す',
-            move_forward: '%n 歩前進させる',
-            move_backward: '%n 歩後退させる'
-        },
         en: {
             turn_right: 'turn right %n degrees',
             turn_left: 'turn left %n degrees',
             move_forward: 'move forward %n steps',
-            move_backward: 'move backward %n steps'
+            move_backward: 'move backward %n steps',
+	    led_change: 'change rgb colour %n'
         },
     }
 
@@ -50,7 +51,8 @@
             [' ', 'MiP: ' + locale[lang].turn_right, 'right', 90],
             [' ', 'MiP: ' + locale[lang].turn_left, 'left', 90],
             [' ', 'MiP: ' + locale[lang].move_forward, 'forward'],
-            [' ', 'MiP: ' + locale[lang].move_backward, 'backward']
+            [' ', 'MiP: ' + locale[lang].move_backward, 'backward'],
+	        [' ', 'MiP: ' + locale[lang].led_change, 'ledchange']
         ]
     };
 
