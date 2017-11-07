@@ -31,7 +31,7 @@
     
     ext.ledchange = function(rgb) {
         $.get('http://localhost:8080/ledchange?rgb=' + rgb, null, function() {
-            console.log('change rgb colour ' + rgb );
+            console.log('Change Chest Colour(red) ' + rgb );
         });
     };
 
@@ -43,7 +43,7 @@
             turn_left: 'turn left %n degrees',
             move_forward: 'move forward %n steps',
             move_backward: 'move backward %n steps',
-	    led_change: 'change rgb colour %n'
+	    led_change: 'Change Chest Colour(red) %n'
         },
     }
 
