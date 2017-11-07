@@ -34,6 +34,12 @@
             console.log('Change Chest Colour(red) ' + red );
         });
     };
+	
+    ext.chestChangeGreen = function(green) {
+        $.get('http://localhost:8080/chestChangeRed?green=' + green, null, null, null, function() {
+            console.log('Change Chest Colour(green) ' + green );
+        });
+    };
 
 
     var lang = 'en';
@@ -44,6 +50,7 @@
             move_forward: 'move forward %n steps',
             move_backward: 'move backward %n steps',
 	    chest_red: 'Change Chest Colour (red) %n'
+	    chest_green: 'Change Chest Colour (green) %n'
         },
     }
 
@@ -54,6 +61,7 @@
             [' ', 'MiP: ' + locale[lang].move_forward, 'forward'],
             [' ', 'MiP: ' + locale[lang].move_backward, 'backward'],
 	    [' ', 'MiP: ' + locale[lang].chest_red, 'chestChangeRed']
+	    [' ', 'MiP: ' + locale[lang].chest_green, 'chestChangeGreen']
         ]
     };
 
