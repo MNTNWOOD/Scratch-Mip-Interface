@@ -30,7 +30,7 @@
     };
     
     ext.chestChangeRed = function(red) {
-        $.get('http://localhost:8080/chestChangeRed?red=' + red, null, function() {
+        $.get('http://localhost:8080/chestChangeRed?red=' + red, null, null, null, function() {
             console.log('Change Chest Colour(red) ' + red );
         });
     };
@@ -43,7 +43,7 @@
             turn_left: 'turn left %n degrees',
             move_forward: 'move forward %n steps',
             move_backward: 'move backward %n steps',
-	    chest_red: 'Change Chest Colour(red) %n'
+	    chest_red: 'Change Chest Colour (red) %n'
         },
     }
 
