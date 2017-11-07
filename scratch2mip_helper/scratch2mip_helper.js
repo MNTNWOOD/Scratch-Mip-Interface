@@ -111,9 +111,9 @@ dispatcher.onGet('/left', function(req, res) {
 dispatcher.onGet('/chestChangeRed', function(req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end('chestChangeRed');
-  var rgb = parseInt(getQueryObj(req).red, 10);
+  var red = parseInt(getQueryObj(req).red, 10);
 
-  selectedRobot.setMipChestLedWithColor(red, 0, 0, 0, function(err) {
+  selectedRobot.setMipChestLedWithColor(red, 0, 0, 10, function(err) {
     console.log('Change Chest Colour(red) ' + red);
   });
 });
