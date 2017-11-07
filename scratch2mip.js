@@ -43,7 +43,7 @@
             turn_left: 'turn left %n degrees',
             move_forward: 'move forward %n steps',
             move_backward: 'move backward %n steps',
-	    chestChangeRed: 'Change Chest Colour(red) %n'
+	    chest_red: 'Change Chest Colour(red) %n'
         },
     }
 
@@ -53,7 +53,7 @@
             [' ', 'MiP: ' + locale[lang].turn_left, 'left', 90],
             [' ', 'MiP: ' + locale[lang].move_forward, 'forward'],
             [' ', 'MiP: ' + locale[lang].move_backward, 'backward'],
-	    [' ', 'MiP: ' + locale[lang].chestChangeRed, 'chestChangeRed']
+	    [' ', 'MiP: ' + locale[lang].chest_red, 'chestChangeRed']
         ]
     };
 
