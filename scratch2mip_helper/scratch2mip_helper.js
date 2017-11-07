@@ -108,9 +108,9 @@ dispatcher.onGet('/left', function(req, res) {
     console.log('Drive to Left ' + degrees + ' degrees');
   });
 });
-dispatcher.onGet('/ledchange', function(req, res) {
+dispatcher.onGet('/chestChangeRed', function(req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('ledchange');
+  res.end('chestChangeRed');
   var rgb = parseInt(getQueryObj(req).red, 10);
 
   selectedRobot.setMipChestLedWithColor(red, 0, 0, 0, function(err) {
