@@ -29,9 +29,9 @@
         });
     };
     
-    ext.ledchange = function(rgb) {
-        $.get('http://localhost:8080/ledchange?rgb=' + rgb, null, function() {
-            console.log('Change Chest Colour(red) ' + rgb );
+    ext.chestChangeRed = function(red) {
+        $.get('http://localhost:8080/chestChangeRed?red=' + red, null, function() {
+            console.log('Change Chest Colour(red) ' + red );
         });
     };
 
@@ -53,7 +53,7 @@
             [' ', 'MiP: ' + locale[lang].turn_left, 'left', 90],
             [' ', 'MiP: ' + locale[lang].move_forward, 'forward'],
             [' ', 'MiP: ' + locale[lang].move_backward, 'backward'],
-	    [' ', 'MiP: ' + locale[lang].led_change, 'ledchange']
+	    [' ', 'MiP: ' + locale[lang].chestChangeRed, 'chestChangeRed']
         ]
     };
 
