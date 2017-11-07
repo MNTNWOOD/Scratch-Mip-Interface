@@ -36,7 +36,7 @@
     };
 	
     ext.chestChangeRgb = function(red, green, blue) {
-        $.get('http://localhost:8080/chestChangeRgb?red, green, blue=' + red, green, blue, null, function() {
+        $.get('http://localhost:8080/chestChangeRgb?red=' + red + '&green=' + green + '&blue=' + blue, null, function() {
             console.log('Change Chest Colour(rgb) ' + red + green + blue );
         });
     };
