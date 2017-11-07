@@ -49,7 +49,7 @@
             move_forward: 'move forward %n steps',
             move_backward: 'move backward %n steps',
 	    chest_red: 'Change Chest Colour (Red) %n',
-	    chest_rgb: 'Change Chest Colour (RGB) %n, %n, %n'
+	    chest_rgb: 'Change Chest Colour (RGB) %a, %b, %c'
         },
     }
 
