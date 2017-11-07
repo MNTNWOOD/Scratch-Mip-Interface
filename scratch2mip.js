@@ -48,8 +48,8 @@
             turn_left: 'turn left %n degrees',
             move_forward: 'move forward %n steps',
             move_backward: 'move backward %n steps',
-	    chest_red: 'Change Chest Colour (red) %n',
-	    chest_rgb: 'Change Chest Colour (rgb %n, %n, %n)'
+	    chest_red: 'Change Chest Colour (Red) %n',
+	    chest_rgb: 'Change Chest Colour (RGB) %n, %n, %n'
         },
     }
 
