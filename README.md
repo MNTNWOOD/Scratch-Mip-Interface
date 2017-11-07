@@ -34,7 +34,7 @@ To control MiP, Helper App needs to be installed. You need node.js to run it.
 2. Click "Open Extension URL" and paste the following URL, then click "Open".
 
 	```
-	http://MNTNWOOD.github.io/Scratch-Mip-Interface/scratch-mip-interface.js
+	http://MNTNWOOD.github.io/Scratch-Mip-Interface/scratch2mip.js
 	```
 3. On Warning dialog, click "I understand, continue" if you trust scratch2mip.
 4. Turn on Wowwee MiP.
